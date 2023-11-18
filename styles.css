@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
+:root {
+    --font-bold: 700;
+    --font-medium: 500;
+    --font-regular: 400;
+    --font-light: 300;
+    --font-title: 2rem;
+    --font-smaller-title: 1.4rem;
+    --font-subtitle: 1.2rem;
+    --font-body: 1rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +57,7 @@ body {
 
 .title {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: var(--font-subtitle);
 }
 
 section {
@@ -66,8 +77,14 @@ section {
     max-width: 70%;
 }
 
-.contributors {
+.contributors_title {
     text-align: center;
+    font-size: var(--font-smaller-title);
+}
+
+.acm-project_title {
+    text-align: center;
+    font-size: var(--font-body);
 }
 
 .people_container {
@@ -97,12 +114,23 @@ h2 {
 
 .subtitle {
     text-align: center;
-    font-weight: 500;
+    font-weight: var(--font-medium);
 }
 
 p, li {
     line-height: 1.5rem;
-    font-weight: 300;
+    font-weight: var(--font-light);
+}
+
+.small_title {
+    font-weight: var(--font-medium);
+    font-size: var(--font-smaller-title);
+}
+
+.app_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 a {
@@ -111,4 +139,24 @@ a {
 
 a:hover {
     cursor: pointer;
+}
+
+.external-link::after {
+    content: ' ➔';
+    color: #000;
+    font-size: 1em;
+    padding-left: 5px;
+}
+
+.demo_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.demo_title {
+    text-align: center;
+    font-size: var(--font-body);
 }

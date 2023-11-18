@@ -4,5 +4,3 @@
 </div>
 
 ## Visit Talk To Listen Website at [Project Website](https://hieuminh65.github.io/talktolisten-page/)
-
-## [Project Repository](https://github.com/hieuminh65/talktolisten)
